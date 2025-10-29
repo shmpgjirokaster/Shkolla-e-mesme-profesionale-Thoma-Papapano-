@@ -4,21 +4,74 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Galeria - Shkolla Profesionale "Thoma Papapano"</title>
+
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
+
         <style>
+            :root {
+                --brand: #b0193f;
+                --brand-dark: #7d0f2c;
+                --text-on-brand: #ffffff;
+            }
+
+            body {
+                font-family:
+                    "Poppins",
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    sans-serif;
+            }
+
+            .navbar-brand,
+            .nav-link {
+                color: var(--brand) !important;
+                font-weight: 500;
+            }
+            .nav-link.active,
+            .nav-link:hover {
+                color: var(--brand-dark) !important;
+                text-decoration: underline;
+            }
+
+            .hero-gallery {
+                background-color: var(--brand);
+                color: var(--text-on-brand);
+                text-align: center;
+                padding: 80px 20px;
+            }
+
             .gallery-item img {
                 width: 100%;
                 border-radius: 10px;
+            }
+
+            footer {
+                background-color: var(--brand);
+                color: var(--text-on-brand);
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+
+            h1 {
+                font-weight: 600;
+                color: #fff;
+            }
+            p {
+                font-size: 0.95rem;
             }
         </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="shkolla.html"
+                <a class="navbar-brand fw-bold" href="index.html"
                     >Shkolla Profesionale</a
                 >
                 <div
@@ -38,14 +91,16 @@
                             <a class="nav-link" href="lajme.html">Lajme</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Galeria</a>
+                            <a class="nav-link active" href="galeria.html"
+                                >Galeria</a
+                            >
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <section class="bg-primary text-white text-center py-5">
+        <section class="hero-gallery">
             <div class="container">
                 <h1>Galeria</h1>
                 <p>
@@ -80,7 +135,7 @@
             </div>
         </section>
 
-        <footer class="bg-primary text-white text-center p-3">
+        <footer>
             <p>&copy; 2025 Shkolla Profesionale "Thoma Papapano"</p>
         </footer>
     </body>
